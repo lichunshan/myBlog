@@ -1,0 +1,38 @@
+{% extends 'layout.html' %} 
+
+{% block main %}
+<ol class="breadcrumb">
+    <li><a href="/admin">管理首页</a></li>
+    <li><span>内容添加</span></li>
+</ol>
+<h3>内容添加</h3>
+<div class="container">
+    <form action="/admin/content/add" role="form" method="post">
+        <div class="form-group">
+            <label for="category">分类</label>
+            <select name="category" id="category" class="form-control">
+                {% for category in categories %}
+                <option value="{{category._id.toString()}}">{{category.name}}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="title">内容标题:</label>
+            <input id="title" type="text" class="form-control" placeholder="请输入内容标题"  name="title">
+        </div>
+        <div class="form-group">
+                <label for="description">内容简介:</label>
+                <textarea id="description" type="text" class="form-control" placeholder="请输入内容简介" name="description" rows="5"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="content">内容</label>
+            <textarea name="content" id="content" rows="30" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="提交" class="form-control default btn-default" >
+        </div>
+    </form>
+</div>
+<!-- 分页 -->
+<!-- {%include 'page.html'%} -->
+{% endblock %}

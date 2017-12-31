@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:#F3F3F3;
+}
+.top{
+    min-width: 900px;
+    height: 200px;
+    background: url('../images/top.png');
+    background-size: 100% 200px;
+    
+}
+/* 导航部分 */
+.nav{
+    min-width: 900px;
+    background:#ffffff;
+    text-align: center;
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul li{
+    display: inline-block;
+    margin: 4px 10px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(10, 164, 202);
+}
+.focus{
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}
+/* 内容部分 */
+.content{
+    width: 900px;
+    margin: 0 auto;
+}
+.content .left{
+    width: 600px;
+}
+.content .right{
+    float: right;
+    width: 300px;;
+    
+}
+/* 右侧信息 */
+.user{
+    margin: 10px;
+    background: #ffffff;
+    border-radius: 4px ;
+    text-align: center;
+}
+.user p{
+    margin: 20px 0;
+}
+.user p span{
+    color: red;
+}
+.user a{
+    color: rgb(10, 164, 202);
+}
+
+.login{
+    margin: 10px;
+    background: #ffffff;
+    border-radius: 4px ;
+    text-align: center;
+}
+.login input{
+    margin-top: 20px;
+    border: 1px solid rgb(10, 164, 202);
+    width: 200px;
+    height:30px;
+    border-radius: 4px;
+}
+.login input:last-of-type{
+    width: 90px;
+    display: inline-block;
+    margin-bottom: 4px;
+    background: rgb(10, 164, 202);
+}
+.login .small{
+    font-size: 14px;
+    text-align: right;
+}
+.login a.small{
+    color: orange;
+    text-decoration: none;
+}
+.login-message{
+    font-size: 14px;
+    color: orange;
+}
+.logout-message{
+    font-size: 14px;
+    color: orange;
+}
+.zhuce{
+    margin: 10px;
+    background: #ffffff;
+    border-radius: 4px ;
+    text-align: center;
+}
+.zhuce input{
+    margin-top: 20px;
+    border: 1px solid rgb(10, 164, 202);
+    width: 200px;
+    height:30px;
+    border-radius: 4px;
+}
+.zhuce input:last-of-type{
+    width: 90px;
+    display: inline-block;
+    margin-bottom: 4px;
+    background: rgb(10, 164, 202);
+}
+.zhuce .small{
+    font-size: 14px;
+    text-align: right;
+}
+.zhuce a.small{
+    color: orange;
+    text-decoration: none;
+}
+.message{
+    font-size: 14px;
+    color: orange;
+}
+/* 文章 */
+.wenzhang{
+    text-align: center;
+    overflow: hidden;
+}
+.wenzhang .wenzhang-bfc{
+    margin: 10px;
+    background: #ffffff;
+    border-radius: 4px;
+}
+.wenzhang ul{
+    list-style: none;
+    margin: 10px 0 10px 0;
+    font-size: 14px;
+}
+.wenzhang ul li{
+    display: inline-block;
+}
+.wenzhang ul li span{
+    color: rgb(10, 164, 202);
+}
+.wenzhang p{
+    text-align: left;
+    text-indent: 2em;
+}
+.wenzhang button{
+    width: 100px;
+    height: 30px;
+    background: rgb(10, 164, 202);
+    border: none;
+    border-radius: 4px;
+    float: left;
+    margin: 10px 0 10px 20px;
+}
+.block_page{
+    width: 600px;
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+}
+.block_page a{
+    
+    background: rgb(10, 164, 202);
+    padding: 2px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.comment{
+    width: 600px;
+    overflow: hidden;
+}
+.comment_top{
+    margin: 10px;
+    background: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.comment_in{
+    margin:25px;
+}
+.comment h3{
+    display: inline-block;
+}
+.comment span{
+    float:right;
+    display: inline-block;
+    font-size: 14px;
+}
+#input{
+    display: inline-block;
+    width: 400px;
+    height: 60px;
+    border: none;
+    border: 1px solid rgb(10, 164, 202);
+}
+#btn{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    height: 62px;
+    width: 80px;
+    border: none;
+    background: rgb(10, 164, 202);
+}
+.in_four{
+    box-shadow: 1px 1px 3px rgb(10, 164, 202);
+}
+.in_four_top{
+   overflow: hidden;
+   margin-top: 20px;
+}
+.in_four_top span.left{
+    display: inline-block;
+    float: left;
+    width: auto;
+}
+.in_four_top span.right{
+    display: inline-block;
+    float: right;
+    width: auto;
+}
+.comment_content{
+    text-indent: 2em;
+    font-size: 14px;
+}
+#denglu{
+    display: block;
+    width: 400px;
+    height: 40px;
+    background: orange;
+    border: none;
+    margin: 0 auto;
+}
+/* @media screen and (max-width:900px){
+   
+} */
